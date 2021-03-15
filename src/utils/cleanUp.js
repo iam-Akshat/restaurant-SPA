@@ -1,6 +1,6 @@
 const cleanUp = () => {
-    const root = document.getElementById('content')
-    root.innerHTML = ''
-}
+  const root = document.getElementById('content');
+  root.innerHTML = '';
+};
 
-export { cleanUp }
+export default cleanUp;

@@ -1,14 +1,14 @@
-(async ()=> {await import('../stylesheets/aboutForm.css') })()
+(async () => { await import('../stylesheets/aboutForm.css'); })();
 const loadContact = () => {
-    const root = document.getElementById('content')
+  const root = document.getElementById('content');
 
-    const text = `<h1>Contact us here</h1>`
+  const text = '<h1>Contact us here</h1>';
 
-    const wrapper = document.createElement('div')
-    wrapper.innerHTML = text
+  const wrapper = document.createElement('div');
+  wrapper.innerHTML = text;
 
-    const formContainer = document.createElement('div')
-    const formMarkup = `
+  const formContainer = document.createElement('div');
+  const formMarkup = `
     <form>
 
         <label for="fname">First Name</label>
@@ -22,18 +22,17 @@ const loadContact = () => {
 
         <input type="submit" value="Submit">
     </form>
-    `
-    formContainer.innerHTML = formMarkup
+    `;
+  formContainer.innerHTML = formMarkup;
 
-    wrapper.appendChild(formContainer)
+  wrapper.appendChild(formContainer);
 
-    const contact = document.createElement('div')
-    contact.classList.add('contact')
-    contact.appendChild(wrapper)
+  const contact = document.createElement('div');
+  contact.classList.add('contact');
+  contact.appendChild(wrapper);
 
-    root.appendChild(contact)
+  root.appendChild(contact);
+};
 
-}
-
-export { loadContact }
+export { loadContact };
 export default loadContact;
