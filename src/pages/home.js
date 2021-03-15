@@ -1,4 +1,4 @@
-import bgImg from "./assets/restua-bg.jpg" 
+import bgImg from "../assets/restua-bg.jpg" 
 const loadHome = () => {
     const root = document.getElementById('content')
     const home =  document.createElement('div')
