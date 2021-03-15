@@ -14,21 +14,18 @@ const navigate = (target) => {
   switch (toPage) {
     case 'home': (async () => {
       loadHome();
-      window.history.pushState({ page: 'home' }, '/home', '/home');
     })();
       break;
 
     case 'about': (async () => {
       const { /* webpackPrefetch: true */ default: loadAbout } = await import('../pages/about');
       loadAbout();
-      window.history.pushState({ page: 'about' }, '/about', '/about');
     })();
       break;
 
     case 'contact': (async () => {
       const { /* webpackPrefetch: true */ default: loadContact } = await import('../pages/contact');
       loadContact();
-      window.history.pushState({ page: 'contact' }, '/contact', '/contact');
     })();
       break;
 
